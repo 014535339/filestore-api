@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "c750476b-8e20-4402-b116-910290e4de88",
+		"name": "FileManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FileUpload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fileToUpload",
+							"contentType": "",
+							"type": "file",
+							"src": "/C:/Users/prav/Desktop/temp.txt"
+						},
+						{
+							"key": "description",
+							"value": "Test file",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://filestore.store/api/v1/filemgmt/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"filemgmt",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FileUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "multipart/form-data"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fileToUpload",
+							"contentType": "",
+							"type": "file",
+							"src": "/C:/Users/prav/Desktop/temp2.txt"
+						},
+						{
+							"key": "description",
+							"value": "Test file2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://filestore.store/api/v1/filemgmt//6525f7ff-2474-4a7a-97d9-f95c2f1b2ca5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"filemgmt",
+						"",
+						"6525f7ff-2474-4a7a-97d9-f95c2f1b2ca5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://filestore.store/api/v1/filemgmt//6525f7ff-2474-4a7a-97d9-f95c2f1b2ca5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"filemgmt",
+						"",
+						"6525f7ff-2474-4a7a-97d9-f95c2f1b2ca5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllFiles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://filestore.store/api/v1/filemgmt/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"filemgmt",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
