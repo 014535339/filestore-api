@@ -1,5 +1,5 @@
-# fileupload-system
-This is a backend of an file-mgmt system which will allow users to upload, update, list and delete files
+# File Management Service
+This is a backend of an File Management Service which will allow users to upload, update, list and delete files.
 
 # Developing
 
@@ -22,7 +22,7 @@ Making the local setup ready:
 # Running:
 
 
-# filemgmt-system architecture overview:
+# File Management Application AWS Architecture overview:
 
 Backend of file-system exposes highlevel endpoints as REST APIs through 'express'
-
+![alt text](https://github.com/014535339/filestore-api/blob/master/Architecture%20Diagram.png)
